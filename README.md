@@ -1,201 +1,93 @@
-# 🌟 Flipkart Product Review Sentiment Analysis
+# 🛍️ Flipkart Product Review Sentiment Analysis 📈
 
-A modern deep-learning powered system that **scrapes**, **analyzes**, and **classifies** Flipkart product reviews into **Positive**, **Neutral**, and **Negative** sentiments. Built with state‑of‑the‑art NLP models and a clean web interface, this project helps users make smarter and faster buying decisions.
+Analyze Flipkart product reviews instantly. This project uses deep learning (BERT) to classify sentiment (Positive, Neutral, or Negative) and help you make smarter purchasing decisions.
 
----
-
-## 🚀 Project Overview
-
-This project automates the entire workflow of:
-
-* 🔍 **Scraping** Flipkart reviews
-* 🧹 **Cleaning & preprocessing** the text
-* 🤖 **Analyzing sentiment** using multiple deep learning models
-* 📊 **Comparing model performances**
-* 🌐 **Providing real-time predictions** through a simple UI
-
-The final system uses **BERT**, achieving **96.96% accuracy**, making it the most reliable model for product sentiment analysis.
-
-📌 **Video Demo:** [Project Demo (Google Drive)](https://drive.google.com/file/d/1GCZzpe-t29QAWzkp3ZV0K3h4yZP6JyUy/view)
-
-📌 **Developer Profile:** [Chayan Ghosh – LinkedIn](https://www.linkedin.com/in/chayan-ghosh07/)
+[![Watch Demo](https://img.shields.io/badge/Watch-Project_Demo-red?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/file/d/1GCZzpe-t29QAWzkp3ZV0K3h4yZP6JyUy/view)
 
 ---
 
-## 🎯 Project Objectives
-
-* ⭐ Automatically classify product reviews (Positive / Neutral / Negative)
-* 🛍️ Help users make informed purchase decisions
-* 🚫 Prevent buying low-quality products
-* ⚙️ Provide accurate sentiment summarization
-
----
-
-## 🛠️ Technologies Used
-
-### 🔧 Backend
-
-* **Python** – Core development
-* **BeautifulSoup4** – Web scraping
-* **Flask** – API creation
-
-### 🧠 Deep Learning / NLP
-
-* **BERT** (Best performing model)
-* **RNN**, **LSTM**, **BiLSTM** with Glove / Word2Vec / Doc2Vec
-* **TensorFlow GPU** – Accelerated training
-* **NLTK**, **spaCy** – Text preprocessing
-
-### 🎨 Frontend
-
-* **HTML**, **CSS**, **JavaScript** – Review submission & result UI
+### Built With
+<p>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask" />
+  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow" />
+  <img src="https://img.shields.io/badge/Model-BERT-blue?style=for-the-badge" alt="BERT" />
+  <img src="https://img.shields.io/badge/BeautifulSoup-4C1130?style=for-the-badge&logo=beautifulsoup&logoColor=white" alt="BeautifulSoup" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+</p>
 
 ---
 
-## 📊 Model Performance Comparison
+## 🎯 Project Goals
 
-| Model    | Embedding | Accuracy   | Validation Accuracy | Conclusion                        |
-| -------- | --------- | ---------- | ------------------- | --------------------------------- |
-| RNN      | Glove     | 40%        | 40%                 | ❌ Underfit                        |
-| LSTM     | Glove     | 41%        | 40%                 | ❌ Underfit                        |
-| BiLSTM   | Glove     | 92%        | 90%                 | ⚠️ Good on paper, weak in testing |
-| BiLSTM   | Doc2Vec   | 94%        | 91%                 | ⚠️ High but biased                |
-| **BERT** | **BERT**  | **96.96%** | **91.03%**          | 🏆 **Best overall**               |
+This project automates the analysis of Flipkart product reviews to:
 
----
+* ✅ **Automate Sentiment Classification:** Instantly categorize reviews as positive, neutral, or negative.
+* 💡 **Provide Purchase Recommendations:** Help users quickly evaluate product quality.
+* 🛡️ **Avoid Low-Quality Products:** Save time by highlighting poor-performing items based on customer feedback.
 
-## 🧩 Methodology
+## ✨ Key Features
 
-### 1️⃣ **Web Scraping**
+* **Automated Review Scraping:** Pulls reviews directly from Flipkart product pages.
+* **Deep Learning Power:** Utilizes a fine-tuned BERT model for state-of-the-art sentiment classification.
+* **Simple UI:** A clean and simple frontend to submit a product link and view the results.
+* **Informed Decisions:** Empowers customers to make better buying choices.
 
-* Collects reviews using `requests` + `BeautifulSoup4`
-* Handles pagination and invalid links
+## 🛠️ How It Works
 
-### 2️⃣ **Data Preprocessing**
+The project follows a four-step methodology:
 
-* Emoji & noise removal
-* Tokenization
-* Stopword removal
-* Stemming / Lemmatization
+1.  **1️⃣ Web Scraping:**
+    * Uses `requests` and `BeautifulSoup4` to scrape customer reviews.
+    * Includes logic for handling pagination and request errors.
 
-### 3️⃣ **Model Training**
+2.  **2️⃣ Data Preprocessing:**
+    * Cleans raw text data using `NLTK` and `spaCy`.
+    * Handles emojis, tokenizes sentences, removes stopwords, and performs stemming/lemmatization.
 
-* Multiple NLP models compared
-* BERT selected as final model due to consistent results
+3.  **3️⃣ Model Training:**
+    * Compares multiple deep learning architectures (RNN, LSTM, BiLSTM) with various embeddings.
+    * **BERT** was chosen as the final model for its superior performance and consistency on real-world test data.
 
-### 4️⃣ **Output**
+4.  **4️⃣ Output:**
+    * Presents a clear summary of the overall sentiment (e.g., 80% Positive, 10% Neutral, 10% Negative).
 
-* Sentiment summary (Positive / Neutral / Negative)
-* Clean UI showing classification results
+## 📊 Model Performance
 
----
+We experimented with several models. **BERT** provided the best and most reliable performance.
 
-## ✨ Features
+| Model | Embedding | Accuracy | Validation Accuracy | Conclusion |
+| :--- | :--- | :--- | :--- | :--- |
+| RNN | Glove | 40% | 40% | Underfit |
+| LSTM | Glove | 41% | 40% | Underfit |
+| BiLSTM | Glove | 92% | 90% | Good paper accuracy, weak test performance |
+| BiLSTM | Doc2Vec | 94% | 91% | High accuracy, but biased |
+| **BERT** | **BERT** | **96.96%** | **91.03%** | **Best performance overall** |
 
-* 🔄 Automated Flipkart review scraping
-* 🧠 Deep-learning based sentiment prediction
-* 📈 Model comparison dashboard (optional)
-* 🧼 End‑to‑end clean preprocessing pipeline
-* 🌐 Simple and intuitive UI
-* 🛍️ Helps users avoid low‑quality products
+## 🚀 Future Scope
 
----
+We plan to continue improving this project with new features:
 
-## 🔮 Future Scope
+* **Upgrade Model:** Fine-tune a larger variant of BERT (e.g., RoBERTa) for even better accuracy.
+* **Enhance UI/UX:** Create a more interactive and visually appealing frontend.
+* **Product Recommendations:** Suggest alternative, higher-rated products.
+* **Speed Optimization:** Improve the API response time for faster analysis.
+* **Trending Products:** Add a feature to show products that are currently trending based on positive reviews.
 
-* 🔼 Upgrade BERT to larger variants
-* 🎨 Improve UI/UX
-* 🧠 Add product recommendation engine
-* ⚡ Optimize API response time
-* 📊 Add trending product insights
-
----
-
-## 👥 Contributors
+## 🤝 Our Team
 
 * **Chayan Ghosh** – Model Engineer & API Integration
+    [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/chayan-ghosh07/)
 * **Rijwanool Karim** – Model Engineer & API Integration
 * **Shouryadip Bera** – Backend & Frontend Developer
 * **Sk Mahiduzzaman** – Data Cleaning & Research
 * **Sayantan Saha** – Data Cleaning & Research
 
----
-
 ## 📚 References
 
 * Adarsh Kumar, K N Ganesh – Sentiment Analysis on Flipkart
-* Medium (Arsha) – NLP Preprocessing
-* TechTarget – BERT Model Overview
+* Medium, Arsha – NLP Preprocessing
+* TechTarget – BERT Language Model
 * PapersWithCode – Bidirectional LSTM
-
----
-
-## ⭐ Show Your Support!
-
-If you like this project, feel free to ⭐ **star the repository** and connect with me on **LinkedIn**!
-
-📌 **Chayan Ghosh LinkedIn:** [https://www.linkedin.com/in/chayan-ghosh07/](https://www.linkedin.com/in/chayan-ghosh07/)
-
----
-
-## 📝 Project Lines — Stylish Footer
-
-A few neat lines you can add at the bottom of the README to highlight the project, team and useful links.
-
-> **Project:** Flipkart Product Review Sentiment Analysis — Deep‑learning driven sentiment classification (BERT)
->
-> **Team:** Chayan Ghosh • Rijwanool Karim • Shouryadip Bera • Sk Mahiduzzaman • Sayantan Saha
->
-> **Demo:** [https://drive.google.com/file/d/1GCZzpe-t29QAWzkp3ZV0K3h4yZP6JyUy/view](https://drive.google.com/file/d/1GCZzpe-t29QAWzkp3ZV0K3h4yZP6JyUy/view)
->
-> **LinkedIn:** [https://www.linkedin.com/in/chayan-ghosh07/](https://www.linkedin.com/in/chayan-ghosh07/)
->
-> **Portfolio:** [https://www.chayanghosh.com/](https://www.chayanghosh.com/)
-
----
-
-## 💻 HTML / CSS Footer Snippet
-
-You can copy-paste this footer into any project site or HTML README preview to show a polished footer with team credits and links.
-
-```html
-<!-- Project Footer -->
-<footer class="project-footer">
-  <div class="container">
-    <p class="title">Flipkart Product Review Sentiment Analysis</p>
-    <p class="team">Team: <strong>Chayan Ghosh</strong> • Rijwanool Karim • Shouryadip Bera • Sk Mahiduzzaman • Sayantan Saha</p>
-    <div class="links">
-      <a href="https://drive.google.com/file/d/1GCZzpe-t29QAWzkp3ZV0K3h4yZP6JyUy/view" target="_blank" rel="noopener">Demo Video</a>
-      <a href="https://www.linkedin.com/in/chayan-ghosh07/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://www.chayanghosh.com/" target="_blank" rel="noopener">Portfolio</a>
-    </div>
-  </div>
-</footer>
-```
-
-```css
-/* Minimal footer styles */
-.project-footer{
-  background: linear-gradient(90deg, rgba(2,6,23,1) 0%, rgba(9,57,120,1) 100%);
-  color: #ffffff;
-  padding: 24px 16px;
-  border-radius: 8px;
-  margin-top: 24px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-}
-.project-footer .container{max-width:900px;margin:0 auto;text-align:center}
-.project-footer .title{font-weight:700;font-size:18px;margin-bottom:6px}
-.project-footer .team{opacity:0.95;margin-bottom:8px}
-.project-footer .links a{display:inline-block;margin:0 8px;padding:8px 12px;background:rgba(255,255,255,0.08);border-radius:6px;text-decoration:none;color:#fff}
-.project-footer .links a:hover{background:rgba(255,255,255,0.14)}
-```
-
----
-
-If you'd like, I can:
-
-* Convert this footer into a ready-to-use React component (Tailwind style)
-* Add a dark/light toggle example
-* Include social icons (SVG) next to links
-
-Tell me which you prefer and I will add it right into the README.
