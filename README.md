@@ -79,7 +79,6 @@ We plan to continue improving this project with new features:
 ## 🤝 Our Team
 
 * **Chayan Ghosh** – Model Engineer & API Integration
-    [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/chayan-ghosh07/)
 * **Rijwanool Karim** – Model Engineer & API Integration
 * **Shouryadip Bera** – Backend & Frontend Developer
 * **Sk Mahiduzzaman** – Data Cleaning & Research
@@ -91,3 +90,31 @@ We plan to continue improving this project with new features:
 * Medium, Arsha – NLP Preprocessing
 * TechTarget – BERT Language Model
 * PapersWithCode – Bidirectional LSTM
+
+<div align="center">
+
+<br/>
+
+### 🌟 Show your support
+If you find this project helpful, please give it a **Star**!
+
+<br/>
+
+<a href="https://www.linkedin.com/in/chayan-ghosh07/" target="_blank">
+<img src="https://img.shields.io/badge/Connect_on_LinkedIn-blue?style=for-the-badge&logo=linkedin" alt="LinkedIn"/>
+</a>
+<a href="https://drive.google.com/file/d/1GCZzpe-t29QAWzkp3ZV0K3h4yZP6JyUy/view" target="_blank">
+<img src="https://img.shields.io/badge/Watch_Demo_Video-red?style=for-the-badge&logo=youtube&logoColor=white" alt="Demo Video"/>
+</a>
+
+<br/>
+<br/>
+
+<p>Made with ❤️ and Python by <strong>Chayan Ghosh</strong> & Team</p>
+
+[⬆️ Back to Top](#-flipkart-product-review-sentiment-analysis-)
+
+</div>
+
+
+
