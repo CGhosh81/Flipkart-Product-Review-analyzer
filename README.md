@@ -2,7 +2,7 @@
 
 Analyze Flipkart product reviews instantly. This project uses deep learning (BERT) to classify sentiment (Positive, Neutral, or Negative) and help you make smarter purchasing decisions.
 
-[![Watch Demo](https://img.shields.io/badge/Watch-Project_Demo-red?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/file/d/1GCZzpe-t29QAWzkp3ZV0K3h4yZP6JyUy/view)
+[![Watch Demo](https://img.shields.io/badge/Watch-Project_Demo-red?style=for-the-badge&logo=google-drive&logoColor=white)](https://drive.google.com/file/d/1_ZmVVBRPaWQ5l2yJAgf1UUoNYutKuVDK/view?usp=sharing)
 
 ---
 
@@ -102,7 +102,7 @@ If you find this project helpful, please give it a **Star**!
 
 <br/>
 
-<a href="https://drive.google.com/file/d/1GCZzpe-t29QAWzkp3ZV0K3h4yZP6JyUy/view" target="_blank">
+<a href="https://drive.google.com/file/d/1_ZmVVBRPaWQ5l2yJAgf1UUoNYutKuVDK/view?usp=sharing" target="_blank">
 <img src="https://img.shields.io/badge/Watch_Project_Demo-red?style=for-the-badge&logo=google-drive&logoColor=white" alt="Demo Video"/>
 </a>
 
