@@ -79,11 +79,11 @@ We plan to continue improving this project with new features:
 
 ## 🤝 Our Team
 
-* **Chayan Ghosh** – Model Engineer & API Integration [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/chayan-ghosh07/)
+* **Chayan Ghosh** – Model Engineer & Research & API Integration [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/chayan-ghosh07/)
 * **Rijwanool Karim** – Model Engineer & API Integration
-* **Shouryadip Bera** – Backend & Frontend Developer
+* **Shouryadip Bera** – Backend API & Frontend Developer
 * **Sk Mahiduzzaman** – Data Cleaning & Research
-* **Sayantan Saha** – Data Cleaning & Research
+* **Sayantan Saha** – Data Cleaning 
 
 ## 📚 References
 
